@@ -4,7 +4,7 @@ using namespace std;
 int limit(int left, int right, double* n) {
 	while (*n < left || *n > right)
 	{
-		cout << "×èñëî âûõîäèò çà óêàçàííûå ëèìèòû, ââåäèòå ïîâòîðíî: ";
+		cout << "Ð§Ð¸ÑÐ»Ð¾ Ð²Ñ‹Ñ…Ð¾Ð´Ð¸Ñ‚ Ð·Ð° ÑƒÐºÐ°Ð·Ð°Ð½Ð½Ñ‹Ðµ Ð»Ð¸Ð¼Ð¸Ñ‚Ñ‹, Ð²Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¿Ð¾Ð²Ñ‚Ð¾Ñ€Ð½Ð¾: ";
 		cin >> *n;
 	}
 
@@ -21,7 +21,7 @@ int limit(int left, int right, double* n) {
 int main() {
 	setlocale(LC_ALL, "Rus");
 	double n;
-	cout << "Ââåäèòå ÷èñëî: ";
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¾: ";
 	cin >> n;
 	cout << limit(1, 10, &n) << endl;
 
